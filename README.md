@@ -2,6 +2,8 @@
 
 # 2025-01-21
 
+# 1 BASIC
+
 # 1.1
 
 npx create-react-router@7.0.1 wemake
@@ -35,4 +37,15 @@ React Router가 Outlet을 url에 따라 유저에게 보여줘야하는 componen
 
 outlet의 컴포넌트 tomato.tsx는 layout의 {children}에 들어가게 된다.
 
-4:00 까지했음.
+layout의 좋은점은 페이지를 만들떄마다 html 전체 구조를 매번 작성하지 않아도 되기 떄문이다.
+
+React Router가 애플리케이션의 정상동작을 처리할 뿐 아니라 오류 처리하는것도 도와주기떄문이다.
+ErrorBoundary는 에러가 떳을떄 렌더링 될 component이다.
+
+script component
+
+1. ScrollRestoration
+   ㄴ 페이지를 이동했다가 이전 페이지로 돌아갈 때, 혹은 페이지에 돌아가면 스크롤이 원래 위치에 있게한다. 페이지를돌아갈떄마다 맨위에서 시작하는건 별로임
+2. Scripts
+   ㄴ 우리가 브라우저에 보내는 모든 js코드임
+   이 두개가 react router가 나중에 js코드로 교체할 컴포넌트들인데
